@@ -9,7 +9,7 @@ const io = new Server({
 })
 
 
-io.on("connection", (socket) => {-+
+io.on("connection", (socket) => {
 
     socket.on("join", (name) => {
         socket.join(name)
@@ -24,7 +24,6 @@ io.on("connection", (socket) => {-+
     socket.on("sendMessage", (data) => {
         socket.to(data.roomName).emit("receiveMessage", {message: data.message, username: data.username, hsl: data.color} )
         io.emit("handshake", socket.handshake)
-        console.log(socket.handshake)
     })
 
 
