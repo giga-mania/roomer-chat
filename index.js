@@ -10,7 +10,7 @@ const io = new Server({
 
 
 io.on("connection", (socket) => {
-
+    console.log("connection")
     socket.on("join", (name) => {
         socket.join(name)
     })
