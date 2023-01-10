@@ -4,7 +4,7 @@ let USERS = []
 
 const io = new Server({
     cors: {
-        origin: "*"
+        origin: "https://chatter-client-hnfyf.ondigitalocean.app/"
     }
 })
 
