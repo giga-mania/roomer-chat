@@ -36,8 +36,6 @@ io.on("connection", (socket) => {
 })
 
 
-const PORT = 8900
-io.listen(PORT, () => {
-    console.log("server running")
-})
+let PORT = process.env.PORT || 8900
+io.listen(PORT)
 
