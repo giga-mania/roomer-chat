@@ -4,7 +4,7 @@ let USERS = []
 
 const io = new Server({
     cors: {
-        origin: "https://chatter-client-hnfyf.ondigitalocean.app/"
+        origin: "*"
     }
 })
 
@@ -28,6 +28,7 @@ io.on("connection", (socket) => {
 
 
     socket.on("disconnect", () => {
+        console.log("disconnected")
         const disconnectedUser = USERS.find((user) => user.id === socket.id)
         USERS = USERS.filter((user) => user.id !== socket.id)
         io.emit("getJoinedUsers", USERS)
