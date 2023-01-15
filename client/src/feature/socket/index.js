@@ -1,5 +1,5 @@
 import {io} from "socket.io-client"
 
-const socket = io("https://urchin-app-4g4bu.ondigitalocean.app/", {autoConnect: false})
+const socket = io("http://localhost:8080/", {autoConnect: false})
 
 export default  socket
