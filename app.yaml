@@ -1,0 +1,13 @@
+services:
+- environment_slug: node
+  github: 
+    branch: main
+    deploy_on_push: true
+    repo: giga-mania/roomer-chat
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  internal_ports:
+  - 8080
+  name: internal-service
+  run_command: node index.js
+

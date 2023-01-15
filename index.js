@@ -35,7 +35,7 @@ io.on("connection", (socket) => {
     })
 })
 
-let PORT = process.env.PORT || 8900
+let PORT = process.env.PORT || 8080
 console.log("socker server: >>>>>>", PORT)
 io.listen(PORT)
 
