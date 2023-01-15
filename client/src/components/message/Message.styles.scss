@@ -1,0 +1,33 @@
+.message-wrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+
+  .message-username {
+    width: 120px;
+    text-align: end;
+  }
+
+  .right-side {
+    display: flex;
+    max-width: 60%;
+
+    .line {
+      border: 1px solid rgba(194, 189, 189, 0.53);
+    }
+
+    .message-text {
+      color: #a6a28c;
+      border-radius: 5px;
+      padding: 8px;
+      width: fit-content;
+      overflow-wrap: anywhere;
+    }
+  }
+
+
+  div {
+    color: white;
+  }
+}

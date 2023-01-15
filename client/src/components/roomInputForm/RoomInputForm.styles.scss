@@ -1,0 +1,48 @@
+.join-room-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: #ffe4c4;
+  width: 280px;
+  height: 100px;
+  margin-top: 50px;
+
+  .input-field {
+    width: 70%;
+    height: 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'DejaVu Sans Mono', monospace;
+    font-size: 13px;
+  }
+
+
+  .join-button {
+    background-color: #5aa736;
+    outline: none;
+    border: none;
+    width: 55px;
+    height: 20px;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'DejaVu Sans Mono', monospace;
+  }
+
+  .join-button:active {
+    background-color: #316823;
+  }
+
+
+  @media (max-width: 750px) {
+    margin-top: 150px;
+  }
+
+}
+

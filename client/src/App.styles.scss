@@ -1,0 +1,20 @@
+.top-level {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'DejaVu Sans Mono', monospace;
+  font-size: 12px;
+
+  .manual-wrapper{
+    position: absolute;
+    width: 20px;
+    left: 50px;
+    top: 30px;
+
+  }
+
+
+  @media (max-width: 750px) {
+    padding: 10px;
+  }
+}

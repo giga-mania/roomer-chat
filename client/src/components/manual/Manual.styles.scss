@@ -1,0 +1,63 @@
+.manual-container {
+  position: relative;
+  background-color: bisque;
+  font-size: 14px;
+  font-family: 'DejaVu Sans Mono', monospace;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid gray;
+
+  .shh-box {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: bold;
+
+    .warnings {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      .friends {
+        font-size: 10px;
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
+  }
+
+  .main-content {
+    padding: 10px;
+
+    .content-header {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+    }
+
+    .list {
+
+      .list-tr {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    width: 280px;
+  }
+}
